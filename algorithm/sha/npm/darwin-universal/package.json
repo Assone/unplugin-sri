@@ -1,0 +1,15 @@
+{
+  "name": "sha-darwin-universal",
+  "version": "0.0.0",
+  "os": [
+    "darwin"
+  ],
+  "main": "sha.darwin-universal.node",
+  "files": [
+    "sha.darwin-universal.node"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">= 10"
+  }
+}

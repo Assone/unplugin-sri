@@ -1,0 +1,18 @@
+{
+  "name": "sha-win32-arm64-msvc",
+  "version": "0.0.0",
+  "os": [
+    "win32"
+  ],
+  "cpu": [
+    "arm64"
+  ],
+  "main": "sha.win32-arm64-msvc.node",
+  "files": [
+    "sha.win32-arm64-msvc.node"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">= 10"
+  }
+}
