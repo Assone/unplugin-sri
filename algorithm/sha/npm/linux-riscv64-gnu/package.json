@@ -7,11 +7,11 @@
   "cpu": [
     "riscv64"
   ],
+  "license": "MIT",
   "main": "sha.linux-riscv64-gnu.node",
   "files": [
     "sha.linux-riscv64-gnu.node"
   ],
-  "license": "MIT",
   "engines": {
     "node": ">= 10"
   },

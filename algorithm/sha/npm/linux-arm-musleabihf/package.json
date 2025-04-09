@@ -7,11 +7,11 @@
   "cpu": [
     "arm"
   ],
+  "license": "MIT",
   "main": "sha.linux-arm-musleabihf.node",
   "files": [
     "sha.linux-arm-musleabihf.node"
   ],
-  "license": "MIT",
   "engines": {
     "node": ">= 10"
   }

@@ -4,11 +4,11 @@
   "os": [
     "darwin"
   ],
+  "license": "MIT",
   "main": "sha.darwin-universal.node",
   "files": [
     "sha.darwin-universal.node"
   ],
-  "license": "MIT",
   "engines": {
     "node": ">= 10"
   }

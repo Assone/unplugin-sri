@@ -7,11 +7,11 @@
   "cpu": [
     "x64"
   ],
+  "license": "MIT",
   "main": "sha.linux-x64-gnu.node",
   "files": [
     "sha.linux-x64-gnu.node"
   ],
-  "license": "MIT",
   "engines": {
     "node": ">= 10"
   },
