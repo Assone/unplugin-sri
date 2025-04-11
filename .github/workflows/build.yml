@@ -116,7 +116,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: bindings-${{ matrix.settings.target }}
-          path: artifacts/sha/${{ env.APP_NAME }}.*.node
+          path: algorithm/sha/${{ env.APP_NAME }}.*.node
           if-no-files-found: error
 
   build-node:
