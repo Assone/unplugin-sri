@@ -96,6 +96,9 @@ jobs:
         with:
           cache-key: release-build
 
+      - name: Rustup Adds Target
+        run: rustup target add ${{ matrix.settings.target }}
+
       - name: Setup Node
         uses: ./.github/actions/setup-node
 
