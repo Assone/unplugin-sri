@@ -1,5 +1,9 @@
 name: Release Build
 
+env:
+  DEBUG: napi:*
+  APP_NAME: sha
+
 on:
   push:
     branches:
