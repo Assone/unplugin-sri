@@ -1,6 +1,6 @@
 import { defineConfig } from '@rspack/cli'
 import { rspack } from '@rspack/core'
-import Unplugin from '../../src/rspack'
+import Unplugin from '../../packages/sri/src/rspack'
 
 // Target browsers, see: https://github.com/browserslist/browserslist
 const targets = ['chrome >= 87', 'edge >= 88', 'firefox >= 78', 'safari >= 14']
