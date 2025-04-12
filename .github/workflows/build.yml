@@ -112,6 +112,13 @@ jobs:
         with:
           version: 0.13.0
 
+      - uses: taiki-e/install-action@v2
+        if: ${{ contains(matrix.target, 'musl') }}
+        # env:
+        #   GITHUB_TOKEN: ${{ github.token }}
+        with:
+          tool: cargo-zigbuild
+
       - name: Build Binding
         run: ${{ matrix.settings.build }}
         shell: bash
