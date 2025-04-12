@@ -100,7 +100,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Setup Rust
-        uses: .github/actions/setup-rust
+        uses: ./.github/actions/setup-rust
         with:
           cache-key: release-build
 
@@ -108,7 +108,7 @@ jobs:
         run: rustup target add ${{ matrix.settings.target }}
 
       - name: Setup Node
-        uses: .github/actions/setup-node
+        uses: ./.github/actions/setup-node
 
       - name: Setup toolchain
         if: ${{ matrix.settings.setup }}
@@ -190,7 +190,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Setup Node
-        uses: .github/actions/setup-node
+        uses: ./.github/actions/setup-node
 
       - name: Build Node Package
         run: pnpm run build:node
