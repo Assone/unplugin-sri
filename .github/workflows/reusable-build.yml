@@ -122,8 +122,6 @@ jobs:
 
       - uses: taiki-e/install-action@v2
         if: ${{ contains(matrix.settings.target, 'musl') || contains(matrix.settings.target, 'linux-gnu') }}
-        # env:
-        #   GITHUB_TOKEN: ${{ github.token }}
         with:
           tool: cargo-zigbuild
 
