@@ -4,6 +4,12 @@
   "packageManager": "pnpm@10.3.0",
   "scripts": {
     "build:native": "pnpm --filter=@unplugin-sri/algorithm-sha run build",
-    "build:node": "pnpm --filter=unplugin-sri run build"
+    "build:node": "pnpm --filter=unplugin-sri run build",
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint"
+  },
+  "devDependencies": {
+    "turbo": "^2.5.0"
   }
 }
