@@ -63,4 +63,3 @@ jobs:
           pnpm publish -r --tag latest --no-git-checks
         env:
           NPM_TOKEN: ${{ secrets.UNPLUGIN_SRI_NPM_TOKEN }}
-          NPM_CONFIG_PROVENANCE: true
