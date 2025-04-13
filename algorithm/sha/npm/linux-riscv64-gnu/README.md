@@ -1,3 +1,3 @@
-# `sha-linux-riscv64-gnu`
+# `@unplugin-sri/algorithm-sha-linux-riscv64-gnu`
 
-This is the **riscv64gc-unknown-linux-gnu** binary for `sha`
+This is the **riscv64gc-unknown-linux-gnu** binary for `@unplugin-sri/algorithm-sha`

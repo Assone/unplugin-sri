@@ -2,7 +2,7 @@ name: Release Build
 
 env:
   DEBUG: napi:*
-  APP_NAME: sha
+  APP_NAME: algorithm-sha
 
 on:
   workflow_call:

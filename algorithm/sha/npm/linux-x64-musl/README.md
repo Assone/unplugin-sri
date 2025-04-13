@@ -1,3 +1,3 @@
-# `sha-linux-x64-musl`
+# `@unplugin-sri/algorithm-sha-linux-x64-musl`
 
-This is the **x86_64-unknown-linux-musl** binary for `sha`
+This is the **x86_64-unknown-linux-musl** binary for `@unplugin-sri/algorithm-sha`

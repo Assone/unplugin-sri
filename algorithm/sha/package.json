@@ -8,7 +8,7 @@
     "access": "public"
   },
   "napi": {
-    "name": "sha",
+    "name": "algorithm-sha",
     "triples": {
       "additional": [
         "aarch64-apple-darwin",

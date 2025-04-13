@@ -1,18 +1,21 @@
 {
-  "name": "sha-linux-arm-gnueabihf",
-  "version": "0.0.0",
+  "name": "@unplugin-sri/algorithm-sha-linux-arm-gnueabihf",
+  "version": "0.1.0",
   "os": [
     "linux"
   ],
   "cpu": [
     "arm"
   ],
-  "license": "MIT",
-  "main": "sha.linux-arm-gnueabihf.node",
+  "main": "algorithm-sha.linux-arm-gnueabihf.node",
   "files": [
-    "sha.linux-arm-gnueabihf.node"
+    "algorithm-sha.linux-arm-gnueabihf.node"
   ],
+  "license": "MIT",
   "engines": {
     "node": ">= 10"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

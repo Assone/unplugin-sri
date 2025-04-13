@@ -1,18 +1,21 @@
 {
-  "name": "sha-darwin-arm64",
-  "version": "0.0.0",
+  "name": "@unplugin-sri/algorithm-sha-darwin-arm64",
+  "version": "0.1.0",
   "os": [
     "darwin"
   ],
   "cpu": [
     "arm64"
   ],
-  "license": "MIT",
-  "main": "sha.darwin-arm64.node",
+  "main": "algorithm-sha.darwin-arm64.node",
   "files": [
-    "sha.darwin-arm64.node"
+    "algorithm-sha.darwin-arm64.node"
   ],
+  "license": "MIT",
   "engines": {
     "node": ">= 10"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

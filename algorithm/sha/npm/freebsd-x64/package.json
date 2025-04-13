@@ -1,18 +1,21 @@
 {
-  "name": "sha-freebsd-x64",
-  "version": "0.0.0",
+  "name": "@unplugin-sri/algorithm-sha-freebsd-x64",
+  "version": "0.1.0",
   "os": [
     "freebsd"
   ],
   "cpu": [
     "x64"
   ],
-  "license": "MIT",
-  "main": "sha.freebsd-x64.node",
+  "main": "algorithm-sha.freebsd-x64.node",
   "files": [
-    "sha.freebsd-x64.node"
+    "algorithm-sha.freebsd-x64.node"
   ],
+  "license": "MIT",
   "engines": {
     "node": ">= 10"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

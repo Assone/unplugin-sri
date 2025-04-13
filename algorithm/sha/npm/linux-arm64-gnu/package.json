@@ -1,19 +1,22 @@
 {
-  "name": "sha-linux-arm64-gnu",
-  "version": "0.0.0",
+  "name": "@unplugin-sri/algorithm-sha-linux-arm64-gnu",
+  "version": "0.1.0",
   "os": [
     "linux"
   ],
   "cpu": [
     "arm64"
   ],
-  "license": "MIT",
-  "main": "sha.linux-arm64-gnu.node",
+  "main": "algorithm-sha.linux-arm64-gnu.node",
   "files": [
-    "sha.linux-arm64-gnu.node"
+    "algorithm-sha.linux-arm64-gnu.node"
   ],
+  "license": "MIT",
   "engines": {
     "node": ">= 10"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "libc": [
     "glibc"
