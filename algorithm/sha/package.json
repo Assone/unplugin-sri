@@ -1,7 +1,6 @@
 {
   "name": "@unplugin-sri/algorithm-sha",
   "version": "0.1.0",
-  "private": true,
   "license": "MIT",
   "main": "index.js",
   "types": "index.d.ts",
