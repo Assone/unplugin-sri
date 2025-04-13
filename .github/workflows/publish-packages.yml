@@ -44,6 +44,14 @@ jobs:
           path: packages/sri/dist
           name: node-artifact
 
+      - name: Set Publishing Config
+        run: pnpm config set '//registry.npmjs.org/:_authToken' "${NPM_TOKEN}"
+        env: 
+          NPM_TOKEN: ${{ secrets.UNPLUGIN_SRI_NPM_TOKEN }}
+
       - name: Publish(Dry Run)
         run: |
           pnpm publish -r --tag latest --dry-run --no-git-check
+        env:
+          NPM_TOKEN: ${{ secrets.UNPLUGIN_SRI_NPM_TOKEN }}
+          
