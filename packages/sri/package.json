@@ -5,6 +5,9 @@
   "packageManager": "pnpm@10.3.0",
   "description": "",
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "homepage": "https://github.com/Assone/unplugin-sri#readme",
   "repository": {
     "type": "git",
