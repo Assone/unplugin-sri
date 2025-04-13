@@ -1,5 +1,5 @@
 {
-  "name": "unplugin-sri",
+  "name": "unplugin-sri-inject",
   "type": "module",
   "version": "0.1.0",
   "packageManager": "pnpm@10.3.0",
