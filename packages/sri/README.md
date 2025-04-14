@@ -1,40 +1,39 @@
-# unplugin-starter
+# unplugin-sri-inject
 
-[![NPM version](https://img.shields.io/npm/v/unplugin-starter?color=a1b858&label=)](https://www.npmjs.com/package/unplugin-starter)
+[![NPM version](https://img.shields.io/npm/v/unplugin-sri-inject?color=a1b858&label=)](https://www.npmjs.com/package/unplugin-sri-inject)
 
-Starter template for [unplugin](https://github.com/unjs/unplugin).
+`unplugin-sri-inject` is a plugin that injects the [Subresource Integrity](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity) (SRI) attribute into the HTML files.
 
-## Template Usage
+## Features
 
-To use this template, clone it down using:
-
-```bash
-npx degit unplugin/unplugin-starter my-unplugin
-```
-
-And do a global replacement of `unplugin-starter` with your plugin name.
-
-Then you can start developing your unplugin 🔥
-
-To test your plugin, run: `pnpm run dev`
-To release a new version, run: `pnpm run release`
+- Support for Vite, Rollup, Webpack, Nuxt, Vue CLI, and others
+- Support various hashing algorithms (e.g., SHA-256, SHA-384, SHA-512)
 
 ## Install
 
 ```bash
-npm i unplugin-starter
+# npm
+npm i unplugin-sri-inject
+
+# pnpm
+pnpm add unplugin-sri-inject
+
+# yarn
+yarn add unplugin-sri-inject
 ```
+
+## Usage
 
 <details>
 <summary>Vite</summary><br>
 
 ```ts
 // vite.config.ts
-import Starter from 'unplugin-starter/vite'
+import SRI from 'unplugin-sri-inject/vite'
 
 export default defineConfig({
   plugins: [
-    Starter({ /* options */ }),
+    SRI({ /* options */ }),
   ],
 })
 ```
@@ -48,11 +47,11 @@ Example: [`playground/`](./playground/)
 
 ```ts
 // rollup.config.js
-import Starter from 'unplugin-starter/rollup'
+import SRI from 'unplugin-sri-inject/rollup'
 
 export default {
   plugins: [
-    Starter({ /* options */ }),
+    SRI({ /* options */ }),
   ],
 }
 ```
@@ -67,7 +66,7 @@ export default {
 module.exports = {
   /* ... */
   plugins: [
-    require('unplugin-starter/webpack')({ /* options */ })
+    require('unplugin-sri-inject/webpack')({ /* options */ })
   ]
 }
 ```
@@ -81,7 +80,7 @@ module.exports = {
 // nuxt.config.js
 export default defineNuxtConfig({
   modules: [
-    ['unplugin-starter/nuxt', { /* options */ }],
+    ['unplugin-sri-inject/nuxt', { /* options */ }],
   ],
 })
 ```
@@ -98,7 +97,7 @@ export default defineNuxtConfig({
 module.exports = {
   configureWebpack: {
     plugins: [
-      require('unplugin-starter/webpack')({ /* options */ }),
+      require('unplugin-sri-inject/webpack')({ /* options */ }),
     ],
   },
 }
@@ -112,11 +111,21 @@ module.exports = {
 ```ts
 // esbuild.config.js
 import { build } from 'esbuild'
-import Starter from 'unplugin-starter/esbuild'
+import SRI from 'unplugin-sri-inject/esbuild'
 
 build({
-  plugins: [Starter()],
+  plugins: [SRI()],
 })
 ```
 
 <br></details>
+
+## Options
+
+```ts
+import type { Options } from 'unplugin-sri-inject/types'
+
+const options: Options = {
+  /* ... */
+}
+```
