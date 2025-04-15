@@ -32,10 +32,10 @@ switch (platform) {
   case 'android':
     switch (arch) {
       case 'arm64':
-        localFileExisted = existsSync(join(__dirname, 'sha.android-arm64.node'))
+        localFileExisted = existsSync(join(__dirname, 'algorithm-sha.android-arm64.node'))
         try {
           if (localFileExisted) {
-            nativeBinding = require('./sha.android-arm64.node')
+            nativeBinding = require('./algorithm-sha.android-arm64.node')
           } else {
             nativeBinding = require('@unplugin-sri/algorithm-sha-android-arm64')
           }
@@ -44,10 +44,10 @@ switch (platform) {
         }
         break
       case 'arm':
-        localFileExisted = existsSync(join(__dirname, 'sha.android-arm-eabi.node'))
+        localFileExisted = existsSync(join(__dirname, 'algorithm-sha.android-arm-eabi.node'))
         try {
           if (localFileExisted) {
-            nativeBinding = require('./sha.android-arm-eabi.node')
+            nativeBinding = require('./algorithm-sha.android-arm-eabi.node')
           } else {
             nativeBinding = require('@unplugin-sri/algorithm-sha-android-arm-eabi')
           }
@@ -63,11 +63,11 @@ switch (platform) {
     switch (arch) {
       case 'x64':
         localFileExisted = existsSync(
-          join(__dirname, 'sha.win32-x64-msvc.node')
+          join(__dirname, 'algorithm-sha.win32-x64-msvc.node')
         )
         try {
           if (localFileExisted) {
-            nativeBinding = require('./sha.win32-x64-msvc.node')
+            nativeBinding = require('./algorithm-sha.win32-x64-msvc.node')
           } else {
             nativeBinding = require('@unplugin-sri/algorithm-sha-win32-x64-msvc')
           }
@@ -77,11 +77,11 @@ switch (platform) {
         break
       case 'ia32':
         localFileExisted = existsSync(
-          join(__dirname, 'sha.win32-ia32-msvc.node')
+          join(__dirname, 'algorithm-sha.win32-ia32-msvc.node')
         )
         try {
           if (localFileExisted) {
-            nativeBinding = require('./sha.win32-ia32-msvc.node')
+            nativeBinding = require('./algorithm-sha.win32-ia32-msvc.node')
           } else {
             nativeBinding = require('@unplugin-sri/algorithm-sha-win32-ia32-msvc')
           }
@@ -91,11 +91,11 @@ switch (platform) {
         break
       case 'arm64':
         localFileExisted = existsSync(
-          join(__dirname, 'sha.win32-arm64-msvc.node')
+          join(__dirname, 'algorithm-sha.win32-arm64-msvc.node')
         )
         try {
           if (localFileExisted) {
-            nativeBinding = require('./sha.win32-arm64-msvc.node')
+            nativeBinding = require('./algorithm-sha.win32-arm64-msvc.node')
           } else {
             nativeBinding = require('@unplugin-sri/algorithm-sha-win32-arm64-msvc')
           }
@@ -108,10 +108,10 @@ switch (platform) {
     }
     break
   case 'darwin':
-    localFileExisted = existsSync(join(__dirname, 'sha.darwin-universal.node'))
+    localFileExisted = existsSync(join(__dirname, 'algorithm-sha.darwin-universal.node'))
     try {
       if (localFileExisted) {
-        nativeBinding = require('./sha.darwin-universal.node')
+        nativeBinding = require('./algorithm-sha.darwin-universal.node')
       } else {
         nativeBinding = require('@unplugin-sri/algorithm-sha-darwin-universal')
       }
@@ -119,10 +119,10 @@ switch (platform) {
     } catch {}
     switch (arch) {
       case 'x64':
-        localFileExisted = existsSync(join(__dirname, 'sha.darwin-x64.node'))
+        localFileExisted = existsSync(join(__dirname, 'algorithm-sha.darwin-x64.node'))
         try {
           if (localFileExisted) {
-            nativeBinding = require('./sha.darwin-x64.node')
+            nativeBinding = require('./algorithm-sha.darwin-x64.node')
           } else {
             nativeBinding = require('@unplugin-sri/algorithm-sha-darwin-x64')
           }
@@ -132,11 +132,11 @@ switch (platform) {
         break
       case 'arm64':
         localFileExisted = existsSync(
-          join(__dirname, 'sha.darwin-arm64.node')
+          join(__dirname, 'algorithm-sha.darwin-arm64.node')
         )
         try {
           if (localFileExisted) {
-            nativeBinding = require('./sha.darwin-arm64.node')
+            nativeBinding = require('./algorithm-sha.darwin-arm64.node')
           } else {
             nativeBinding = require('@unplugin-sri/algorithm-sha-darwin-arm64')
           }
@@ -152,10 +152,10 @@ switch (platform) {
     if (arch !== 'x64') {
       throw new Error(`Unsupported architecture on FreeBSD: ${arch}`)
     }
-    localFileExisted = existsSync(join(__dirname, 'sha.freebsd-x64.node'))
+    localFileExisted = existsSync(join(__dirname, 'algorithm-sha.freebsd-x64.node'))
     try {
       if (localFileExisted) {
-        nativeBinding = require('./sha.freebsd-x64.node')
+        nativeBinding = require('./algorithm-sha.freebsd-x64.node')
       } else {
         nativeBinding = require('@unplugin-sri/algorithm-sha-freebsd-x64')
       }
@@ -168,11 +168,11 @@ switch (platform) {
       case 'x64':
         if (isMusl()) {
           localFileExisted = existsSync(
-            join(__dirname, 'sha.linux-x64-musl.node')
+            join(__dirname, 'algorithm-sha.linux-x64-musl.node')
           )
           try {
             if (localFileExisted) {
-              nativeBinding = require('./sha.linux-x64-musl.node')
+              nativeBinding = require('./algorithm-sha.linux-x64-musl.node')
             } else {
               nativeBinding = require('@unplugin-sri/algorithm-sha-linux-x64-musl')
             }
@@ -181,11 +181,11 @@ switch (platform) {
           }
         } else {
           localFileExisted = existsSync(
-            join(__dirname, 'sha.linux-x64-gnu.node')
+            join(__dirname, 'algorithm-sha.linux-x64-gnu.node')
           )
           try {
             if (localFileExisted) {
-              nativeBinding = require('./sha.linux-x64-gnu.node')
+              nativeBinding = require('./algorithm-sha.linux-x64-gnu.node')
             } else {
               nativeBinding = require('@unplugin-sri/algorithm-sha-linux-x64-gnu')
             }
@@ -197,11 +197,11 @@ switch (platform) {
       case 'arm64':
         if (isMusl()) {
           localFileExisted = existsSync(
-            join(__dirname, 'sha.linux-arm64-musl.node')
+            join(__dirname, 'algorithm-sha.linux-arm64-musl.node')
           )
           try {
             if (localFileExisted) {
-              nativeBinding = require('./sha.linux-arm64-musl.node')
+              nativeBinding = require('./algorithm-sha.linux-arm64-musl.node')
             } else {
               nativeBinding = require('@unplugin-sri/algorithm-sha-linux-arm64-musl')
             }
@@ -210,11 +210,11 @@ switch (platform) {
           }
         } else {
           localFileExisted = existsSync(
-            join(__dirname, 'sha.linux-arm64-gnu.node')
+            join(__dirname, 'algorithm-sha.linux-arm64-gnu.node')
           )
           try {
             if (localFileExisted) {
-              nativeBinding = require('./sha.linux-arm64-gnu.node')
+              nativeBinding = require('./algorithm-sha.linux-arm64-gnu.node')
             } else {
               nativeBinding = require('@unplugin-sri/algorithm-sha-linux-arm64-gnu')
             }
@@ -226,11 +226,11 @@ switch (platform) {
       case 'arm':
         if (isMusl()) {
           localFileExisted = existsSync(
-            join(__dirname, 'sha.linux-arm-musleabihf.node')
+            join(__dirname, 'algorithm-sha.linux-arm-musleabihf.node')
           )
           try {
             if (localFileExisted) {
-              nativeBinding = require('./sha.linux-arm-musleabihf.node')
+              nativeBinding = require('./algorithm-sha.linux-arm-musleabihf.node')
             } else {
               nativeBinding = require('@unplugin-sri/algorithm-sha-linux-arm-musleabihf')
             }
@@ -239,11 +239,11 @@ switch (platform) {
           }
         } else {
           localFileExisted = existsSync(
-            join(__dirname, 'sha.linux-arm-gnueabihf.node')
+            join(__dirname, 'algorithm-sha.linux-arm-gnueabihf.node')
           )
           try {
             if (localFileExisted) {
-              nativeBinding = require('./sha.linux-arm-gnueabihf.node')
+              nativeBinding = require('./algorithm-sha.linux-arm-gnueabihf.node')
             } else {
               nativeBinding = require('@unplugin-sri/algorithm-sha-linux-arm-gnueabihf')
             }
@@ -255,11 +255,11 @@ switch (platform) {
       case 'riscv64':
         if (isMusl()) {
           localFileExisted = existsSync(
-            join(__dirname, 'sha.linux-riscv64-musl.node')
+            join(__dirname, 'algorithm-sha.linux-riscv64-musl.node')
           )
           try {
             if (localFileExisted) {
-              nativeBinding = require('./sha.linux-riscv64-musl.node')
+              nativeBinding = require('./algorithm-sha.linux-riscv64-musl.node')
             } else {
               nativeBinding = require('@unplugin-sri/algorithm-sha-linux-riscv64-musl')
             }
@@ -268,11 +268,11 @@ switch (platform) {
           }
         } else {
           localFileExisted = existsSync(
-            join(__dirname, 'sha.linux-riscv64-gnu.node')
+            join(__dirname, 'algorithm-sha.linux-riscv64-gnu.node')
           )
           try {
             if (localFileExisted) {
-              nativeBinding = require('./sha.linux-riscv64-gnu.node')
+              nativeBinding = require('./algorithm-sha.linux-riscv64-gnu.node')
             } else {
               nativeBinding = require('@unplugin-sri/algorithm-sha-linux-riscv64-gnu')
             }
@@ -283,11 +283,11 @@ switch (platform) {
         break
       case 's390x':
         localFileExisted = existsSync(
-          join(__dirname, 'sha.linux-s390x-gnu.node')
+          join(__dirname, 'algorithm-sha.linux-s390x-gnu.node')
         )
         try {
           if (localFileExisted) {
-            nativeBinding = require('./sha.linux-s390x-gnu.node')
+            nativeBinding = require('./algorithm-sha.linux-s390x-gnu.node')
           } else {
             nativeBinding = require('@unplugin-sri/algorithm-sha-linux-s390x-gnu')
           }
